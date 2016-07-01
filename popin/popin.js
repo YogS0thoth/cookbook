@@ -1,12 +1,13 @@
-function popin(mentionsToShow) {
+function popin() { // affiche la modal avec un overlay
 
         var overlay = $('.overlay');
+
         var modal = $('#popup');
         var close = $('.close');
+ 
 
         function removeModal() {
             modal.removeClass('show');
-            modal.find('p').css('display', 'none');
         }
  
         function removeModalHandler() {
@@ -14,7 +15,6 @@ function popin(mentionsToShow) {
         }
    
         modal.addClass('show');
-        $('p[data-ml='+ mentionsToShow + ']').css('display', 'block');
         overlay.unbind("click");
 
         overlay.bind("click", removeModalHandler);
