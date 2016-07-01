@@ -1,0 +1,21 @@
+input[type="radio"]:not(:checked), input[type="radio"]:checked { /* on cache les boutons radio par défaut */
+	display:none;
+} 
+
+input[type="radio"]+label:before { /* on créé de nouveaux boutons radio stylisés */
+	content:"";
+	display:inline-block;
+	width:1em;
+	height:1em;
+	background-color:#e3e9eb;
+	border:2px solid #ccc;
+	border-radius:55px;
+}
+
+input[type="radio"]+label:hover:before{
+	background-color:#ccc;
+}
+
+input[type="radio"]:checked+label:before{
+	background-color: #ff0000;
+}
