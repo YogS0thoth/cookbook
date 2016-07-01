@@ -1,0 +1,66 @@
+/* 
+	Styles de la popin 
+*/
+
+.modal {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    width: 50%;
+    max-width: 630px;
+    min-width: 320px;
+    height: 320px;
+    padding: 20px;
+    z-index: 2000;
+    border-radius: 5px;
+    visibility: hidden;
+    background: #fff;
+    -webkit-backface-visibility: hidden;
+    -moz-backface-visibility: hidden;
+    backface-visibility: hidden;
+    -webkit-transform: translateX(-50%) translateY(-50%);
+    -moz-transform: translateX(-50%) translateY(-50%);
+    -ms-transform: translateX(-50%) translateY(-50%);
+    transform: translateX(-50%) translateY(-50%);
+
+}
+
+.modal .close {
+	position: absolute;
+	top: 20px;
+	right: 20px;
+	height: 40px;
+	width: 40px;
+	background-image: url(../img/close.png);
+	cursor: pointer;
+}
+
+.popup-content {
+	text-align: center;
+	padding-top: 70px;
+	font-size:32px;
+}
+ 
+.show {
+    visibility: visible;
+}
+ 
+.overlay {
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    visibility: hidden;
+    top: 0;
+    left: 0;
+    z-index: 1000;
+    opacity: 0;
+    -webkit-transition: all 0.3s;
+    -moz-transition: all 0.3s;
+    transition: all 0.3s;
+    background-color: #044a65;
+}
+ 
+.show ~ .overlay {
+    opacity: 0.5;
+    visibility: visible;
+}
