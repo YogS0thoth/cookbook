@@ -1,0 +1,63 @@
+/**
+ *	Breakpoints
+ */
+$breakpoints: (
+        small: 360px,
+        mobile: 640px,
+        tablet: 767px,
+        medium: 1024px,
+        desktop: 1280px,
+        max: 1680px
+);
+@function breakpoints($name) {
+    @return map-get($breakpoints, $name);
+}
+
+// Refs from psd design
+$refs: (
+        mobile: 750px,
+        tablet: 768px,
+        desktop: 1680px
+);
+@function ref($name: desktop) {
+    @return map-get($refs, $name);
+}
+
+/**
+ * Useful sizes
+ */
+$grids: (
+        mobile: 64px,
+        tablet: 38px,
+        desktop: 75px,
+);
+@function grid($name: desktop) {
+    @return map-get($grids, $name);
+}
+
+
+
+@mixin vw($prop, $mes: grid(), $ref: desktop) {
+    $l: null;
+    @each $dim in $mes {
+        $l: append($l, get-vw($dim, ref($ref)))
+    }
+
+    @if ($ref == desktop) {
+        @media screen and (min-width: breakpoints(max)) {
+            #{$prop}: $mes;
+        }
+        @media screen and (max-width: breakpoints(max)) {
+            #{$prop}: $l;
+        }
+    } @else if ($ref == tablet) {
+        @media screen and (max-width: breakpoints(medium)) {
+            #{$prop}: $l;
+        }
+    } @else {
+        @media screen and (max-width: breakpoints(tablet) - 1) {
+            #{$prop}: $l;
+        }
+    }
+}
+
