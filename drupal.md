@@ -35,3 +35,6 @@ Voir les templates appelés
 ==
 <code>$ drush @alias_de_linstance vset theme_debug 1</code>
 
+Modifier l'url de la page accueil
+==
+/admin/config/system/site-information
