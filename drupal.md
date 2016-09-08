@@ -38,3 +38,10 @@ Voir les templates appelés
 Modifier l'url de la page accueil
 ==
 /admin/config/system/site-information
+
+mettre les preprocess a false
+==
+dans local.settings.php
+// Turn off js and css aggregation ON
+$conf['preprocess_css'] = FALSE;
+$conf['preprocess_js'] = FALSE;
