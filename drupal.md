@@ -42,6 +42,12 @@ Modifier l'url de la page accueil
 mettre les preprocess a false
 ==
 dans local.settings.php
+
+
+
 // Turn off js and css aggregation ON
+
 $conf['preprocess_css'] = FALSE;
+
 $conf['preprocess_js'] = FALSE;
+
