@@ -4,7 +4,7 @@ Pour vous connecter sur les différents serveurs, vous aurez besoin de générer
 
 Sur le terminal taper cette ligne de commande :
 
-<code>$ ssh-keygen -t rsa -C "prenom.nom@xprimegroupe.com"</code>
+<code>$ ssh-keygen -t rsa -C "prenom.nom@toto.com"</code>
 
 Passer les demandes qui vont s'afficher à la suite : nommage, passphrase, etc, ...
 
@@ -19,7 +19,7 @@ J'ai des erreurs de droit (CHMOD) lorsque je lance une commande GULP/GRUNT, que 
 ==
 Vous devez ajouter vos droits en écritures sur les fichiers à l'aide de la commande suivante :
 
-<code>$ sudo add_droit_exec projet.alfa.serveur.local</code>
+<code>$ sudo add_droit_exec projet.toto.serveur.local</code>
 
 Ensuite lancer la commande clean :
 
@@ -55,25 +55,8 @@ Si le module Devel de Drupal est installé, inspectez le code et repérez les co
 < ! -- BEGIN OUTPUT from 'sites/all/themes/movenpick_base/templates/region/region--bare.tpl.php' -->
 <br><br>
 
-J'aimerai faire des test sur différents devices ?
-==
-Il y a des tablettes et mobiles dans le buffet devant le bureau d'Anais
-<br><br>
-
 Je n'arrive pas à copier des fichiers, j'ai une erreur windows m'indiquant que les noms de fichier sont trop long ?
 ==
 Faîtes le en ligne de commande :
 
 <code>$ cp -r monRepertoireACopier ../../dossier/dossierDeDestination/</code>
-
-Comment tester la compatibilité IE8 ?
-==
-Se connecter à la machine virtuelle IE8:
-
-Utiliser Connexion bureau à distance
-
-Ordinateur ie8-vm
-
-User IE8-vm\IEUser
-
-Mot de passe IE
