@@ -52,3 +52,7 @@ Faire un pull alors que l'on a des modifs en cours avec rebase
 ==
 <code>$ git pull --rebase origin master</code>
 l'option rebase permet de réappliquer ses modifs après le pull
+
+Récupérer des branches qu'on ne voit pas
+==
+<code>$ git branch -r</code>
