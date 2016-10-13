@@ -1,0 +1,100 @@
+/* permet de définir une propriété css en fonction du viewport width */
+@mixin vw($prop, $mes: grid(), $ref: desktop) {
+    $l: null;
+    @each $dim in $mes {
+        $l: append($l, get-vw($dim, ref($ref)))
+    }
+
+    @if ($ref == desktop) {
+        @media screen and (min-width: breakpoints(max)) {
+            #{$prop}: $mes;
+        }
+        @media screen and (max-width: breakpoints(max)) {
+            #{$prop}: $l;
+        }
+    } @else if ($ref == tablet) {
+        @media screen and (max-width: breakpoints(medium)) {
+            #{$prop}: $l;
+        }
+    } @else {
+        @media screen and (max-width: breakpoints(tablet) - 1) {
+            #{$prop}: $l;
+        }
+    }
+}
+
+/* Bouchon */
+@mixin clearfix() {
+    &:before,
+    &:after {
+        content: '';
+        display: table;
+        clear: both;
+    }
+}
+
+
+/* Centrer */
+@mixin center($halign: true, $valign: true, $pos: absolute) {
+    $translateX: 0;
+    $translateY: 0;
+    position: $pos;
+    @if $halign {
+        left: 50%;
+        $translateX: -50%;
+    }
+    @if $valign {
+        top: 50%;
+        $translateY: -50%;
+    }
+    transform: translate($translateX, $translateY);
+}
+
+
+// Media queries management
+@mixin respond($min: null, $max: null) {
+  @if ($min != null and $max != null) {
+    @media screen and (min-width: $min + 1) and (max-width: $max ) {
+      @content;
+    }
+  } @else if ($max != null) {
+    @media screen and (max-width: $max) {
+      @content;
+    }
+  } @else {
+    @media screen and (min-width: $min + 1) {
+      @content;
+    }
+  }
+}
+
+@mixin desktop() {
+  @include respond($min: breakpoints(medium)) {
+    @content;
+  }
+}
+
+
+@mixin tablet-desktop() {
+  @include respond($max: breakpoints(desktop)) {
+    @content;
+  }
+}
+
+@mixin tablet() {
+  @include respond($max: breakpoints(medium)) {
+    @content;
+  }
+}
+
+@mixin tablet-portrait() {
+  @include respond($max: 768px) {
+    @content;
+  }
+}
+
+@mixin mobile() {
+  @include respond($max: breakpoints(tablet)) {
+    @content;
+  }
+}
