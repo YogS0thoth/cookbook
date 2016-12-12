@@ -20,3 +20,9 @@ app/config/parameters.yml
 Connaitre tous les éléments d'un formualire
 ==
 {% dump(form) %}
+
+==
+
+vider le cache
+
+rm -rf app/cache/*
