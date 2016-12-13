@@ -32,3 +32,8 @@ Faire une recherche
 Copier un répertoire
 ==
 <code>$ cp -r monRepertoireACopier ../../dossier/dossierDeDestination/</code>
+
+créer un lien symbolique
+==
+ln -s ../../_gulp/node_modules
+
