@@ -1,1 +1,4 @@
+Renommer le calque :
 200% pastilles-intenso@2x.png, pastilles-intenso.png
+
+Fichier > Générer > Fichiers d'image
