@@ -1,0 +1,18 @@
+Pour installer des packages sur sublime text il faut installer le package controle :
+view > show console
+dans la barre qui s'est affiché tu copie colle ce qu'il y a ici https://packagecontrol.io/installation
+attention pas le meme selon sublime text 3 ou sublime text 2
+tu tape entrée
+
+voila tu as ton package controle, pour el lancer tu tape CTrl + Shift + P
+dans la console qui viens de s'ouvrir tu tapes install package
+
+
+SublimeCodeIntel > autocompletion. nikel chrome
+SideBarEnhancements > ajout d'option dans l'arborescence de droite, nikel du vhalala
+ColorHelper > pour les couleurs en hexa. Chromé !
+CodeFormatter > pour formater ton code. comme le vhalala chromé
+BracketHighlighter > pour checker direct les balises, accolade de fin. Sois témoin !
+
+des raccourcis pour sublime text:
+https://gist.github.com/spyl94/3963465
