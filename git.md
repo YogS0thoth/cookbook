@@ -56,3 +56,7 @@ l'option rebase permet de réappliquer ses modifs après le pull
 Récupérer des branches qu'on ne voit pas
 ==
 <code>$ git branch -r</code>
+
+Résoudre un conflit
+==
+$ git checkout --ours assets/css/index.css
