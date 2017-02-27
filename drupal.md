@@ -27,7 +27,7 @@ Pour obtenir la liste des alias :
 <code>$ drush sa</code>
 
 
-revert des features activées
+Récupérer modifs de l'admin
 ==
 <code>$ drush @alias_de_linstance fra</code>
 
