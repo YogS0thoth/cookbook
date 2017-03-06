@@ -60,3 +60,7 @@ Récupérer des branches qu'on ne voit pas
 Résoudre un conflit
 ==
 $ git checkout --ours assets/css/index.css
+
+ajouter toute type de modif sur git
+==
+git add -u
