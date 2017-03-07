@@ -1,5 +1,7 @@
 $ docker-compose -f docker-compose.yml -f docker-compose-others.yml up
 
+équivalent make up
+
 $ docker ps
 équivalent : $ make get-web
 
