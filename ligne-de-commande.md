@@ -37,3 +37,7 @@ créer un lien symbolique
 ==
 ln -s ../../_gulp/node_modules
 
+
+Supprimer un répertoire ou un fichier
+==
+rm -r rep/
