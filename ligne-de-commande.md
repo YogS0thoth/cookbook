@@ -41,3 +41,7 @@ ln -s ../../_gulp/node_modules
 Supprimer un répertoire ou un fichier
 ==
 rm -r rep/
+
+CHMOD
+==
+sudo chmod 775 -R html
