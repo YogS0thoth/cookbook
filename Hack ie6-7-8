@@ -1,0 +1,6 @@
+body {
+	color: red; /* Tous les navigateurs*/
+	color : green\9; /* IE8 et versions inférieures */
+	*color : yellow; /* IE7 et versions inférieures */
+	_color : orange; /* IE6 */
+}
