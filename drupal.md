@@ -43,7 +43,9 @@ mettre les preprocess a false
 ==
 dans local.settings.php
 
-
+Définir les custom variables
+==
+dans \sites\default\settings.php
 
 // Turn off js and css aggregation ON
 
