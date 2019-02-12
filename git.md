@@ -64,3 +64,7 @@ $ git checkout --ours assets/css/index.css
 ajouter toute type de modif sur git
 ==
 git add -u
+
+Résoudre les soucis des noms de fichiers trop long
+==
+git config --system core.longpaths true
