@@ -1,0 +1,9 @@
+si des commandes npm ne fonctionnent pas (par ex. gulp command not found) c'est peut-être qu'il manque la variable d'environnement NODE_PATH
+
+pour la configurer :
+
+Propriétés systeme > varibale d'environnement >
+
+Nom de la avariable : NODE_PATH
+
+Valeur de la variable : %AppData%\npm\node_modules
