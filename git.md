@@ -2,6 +2,9 @@ Reset le dernier commit
 ==
 <code>$git reset HEAD~1 </code>
 
+Reset le dernier merge
+==
+<code>$ git reset --keep ORIG_HEAD </code>
 
 Récupérer une branche
 ==
