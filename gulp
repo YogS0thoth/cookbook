@@ -7,3 +7,6 @@ Propriétés systeme > varibale d'environnement >
 Nom de la avariable : NODE_PATH
 
 Valeur de la variable : %AppData%\npm\node_modules
+
+
+Ensuite essayer npm config set prefix /usr/local
