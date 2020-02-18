@@ -8,5 +8,7 @@ Nom de la avariable : NODE_PATH
 
 Valeur de la variable : %AppData%\npm\node_modules
 
+Sinon il faut changer le npm config prefix :
+npm config set prefix /usr/local
 
-Ensuite essayer npm config set prefix /usr/local
+et ré installer gulp globalement
